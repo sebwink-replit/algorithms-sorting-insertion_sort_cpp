@@ -2,16 +2,8 @@
 #include <string>
 #include <vector>
 
+#include "printit.hpp"
 #include "insertion.hpp"
-
-template <typename T>
-void print(const T& it, std::string prefix) {
-  std::cout << prefix;
-  for (const auto& elem : it) {
-    std::cout << elem << " ";
-  }
-  std::cout << std::endl;
-}
 
 int main() {
   std::vector<int> arr1 {23, 42, 1, 345, 123, 67, 13};

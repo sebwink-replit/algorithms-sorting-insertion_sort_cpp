@@ -1,5 +1,5 @@
-#ifndef INSERTION_HPP
-#define INSERTION_HPP
+#ifndef SEBWINK_REPLIT_INSERTION_HPP
+#define SEBWINK_REPLIT_INSERTION_HPP
 
 namespace insertion {
 
