@@ -13,9 +13,10 @@ namespace insertion {
       const ValueType ei = arr[i];
       SizeType j = i - 1;
       while (j >= 0 && arr[j] > ei) {
-        std::swap(arr[j+1], arr[j]);
+        arr[j + 1] = arr[j];
         j--;
       }
+      arr[j + 1] = ei;
     }
   }
 
