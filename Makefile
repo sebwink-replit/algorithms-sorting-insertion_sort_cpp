@@ -2,11 +2,11 @@
 
 CXX=clang++
 
-run: compile 
-	./main
+run: main 
+	@./$<
 
-compile:
-	$(CXX) -pthread -std=c++17 -o main main.cpp
+main: 
+	@$(CXX) -pthread -std=c++17 -o $@ $@.cpp
 
 clean:
 	rm -f main
