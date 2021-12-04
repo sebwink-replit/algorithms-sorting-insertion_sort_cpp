@@ -5,8 +5,8 @@ CXX=clang++
 run: main 
 	@./$<
 
-main: 
-	@$(CXX) -pthread -std=c++17 -o $@ $@.cpp
+main: main.cpp insertion.hpp
+	@$(CXX) -pthread -std=c++17 -o $@ $<
 
 clean:
 	rm -f main
